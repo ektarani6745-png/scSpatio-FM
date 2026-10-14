@@ -1,0 +1,75 @@
+Oct-14 15:36:12.965 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Oct-14 15:36:13.156 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.10.0
+Oct-14 15:36:13.237 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bioinformatics/.nextflow/plugins; core-plugins: nf-agent-pi@0.6.0,nf-agent@0.2.0,nf-amazon@3.12.0,nf-azure@1.24.1,nf-cloudcache@0.6.2,nf-codecommit@0.6.1,nf-console@1.3.1,nf-google@1.29.0,nf-k8s@1.6.1,nf-seqera@0.26.0,nf-tower@1.32.0,nf-wave@1.22.2
+Oct-14 15:36:13.296 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-14 15:36:13.310 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-14 15:36:13.325 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Oct-14 15:36:13.454 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Oct-14 15:36:13.770 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Oct-14 15:36:13.783 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-14 15:36:14.003 [main] DEBUG nextflow.config.ConfigCmdAdapter - Found config local: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/nextflow.config
+Oct-14 15:36:14.029 [main] DEBUG nextflow.config.ConfigCmdAdapter - Parsing config file: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/nextflow.config
+Oct-14 15:36:14.049 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Oct-14 15:36:14.112 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-14 15:36:15.216 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-14 15:36:15.217 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-14 15:36:15.251 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/bioinformatics/.nextflow/secrets/store.json
+Oct-14 15:36:15.255 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@176996c3] - activable => nextflow.secret.LocalSecretsProvider@176996c3
+Oct-14 15:36:15.273 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [fabulous_moriondo] - revision: 99492b8d58
+Oct-14 15:36:15.718 [main] DEBUG nextflow.Session - Session UUID: 5bbcb07d-09c0-495f-b014-ae9eed3920ed
+Oct-14 15:36:15.719 [main] DEBUG nextflow.Session - Run name: fabulous_moriondo
+Oct-14 15:36:15.720 [main] DEBUG nextflow.Session - Executor pool size: 12
+Oct-14 15:36:15.738 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-14 15:36:15.750 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-14 15:36:15.798 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.10.0 build 14055
+  Created: 12-10-2026 10:48 UTC (16:18 IDT)
+  System: Linux 6.17.0-14-generic
+  Runtime: Groovy 4.0.33 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 12904@bioinformatics-Victus-by-HP-Gaming-Laptop-15-fa2xxx [127.0.1.1]
+  CPUs: 12 - Mem: 15.2 GB (4.6 GB) - Swap: 4 GB (4 GB)
+Oct-14 15:36:15.862 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-14 15:36:15.927 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Oct-14 15:36:16.251 [main] DEBUG nextflow.Session - Work-dir: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/work [ext2/ext3]
+Oct-14 15:36:16.255 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/bin
+Oct-14 15:36:16.295 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[K8sExecutor]
+Oct-14 15:36:16.321 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-14 15:36:16.325 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Oct-14 15:36:16.484 [main] DEBUG nextflow.Session - Session start
+Oct-14 15:36:16.549 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Oct-14 15:36:17.380 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-14 15:36:17.895 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Oct-14 15:36:17.896 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-14 15:36:17.907 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-14 15:36:17.919 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=15.2 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Oct-14 15:36:17.934 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-14 15:36:18.042 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DOWNLOAD_SPATIAL_DATA': maxForks=0; fair=false; array=0
+Oct-14 15:36:18.316 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Oct-14 15:36:18.316 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-14 15:36:18.318 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'EXTRACT_IMAGES': maxForks=0; fair=false; array=0
+Oct-14 15:36:18.339 [main] DEBUG nextflow.Session - Process names: DOWNLOAD_SPATIAL_DATA, EXTRACT_IMAGES
+Oct-14 15:36:18.352 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Oct-14 15:36:18.353 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DOWNLOAD_SPATIAL_DATA
+Oct-14 15:36:18.358 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_IMAGES
+Oct-14 15:36:18.363 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/main.nf
+Oct-14 15:36:18.363 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-14 15:36:18.363 [main] DEBUG nextflow.Session - Session await
+Oct-14 15:36:19.120 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-14 15:36:19.124 [Task submitter] INFO  nextflow.Session - [5c/b148d4] Submitted process > DOWNLOAD_SPATIAL_DATA
+Oct-14 15:36:59.961 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DOWNLOAD_SPATIAL_DATA; status: COMPLETED; exit: 0; error: -; workDir: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/work/5c/b148d4440c75c87c8e836c906b4db6]
+Oct-14 15:36:59.984 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-14 15:37:00.160 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-14 15:37:00.178 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-14 15:37:00.187 [Task submitter] INFO  nextflow.Session - [39/1d8543] Submitted process > EXTRACT_IMAGES
+Oct-14 15:37:00.330 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: EXTRACT_IMAGES; status: COMPLETED; exit: 0; error: -; workDir: /home/bioinformatics/Music/scSpatio-FM/scripts/01_orchestration/work/39/1d85436a923b50a76109b6eef7e519]
+Oct-14 15:37:00.340 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-14 15:37:00.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-14 15:37:00.441 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-14 15:37:00.448 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Oct-14 15:37:00.449 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Oct-14 15:37:00.525 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 43s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=8 GB; ]
+Oct-14 15:37:00.721 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-14 15:37:00.779 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-14 15:37:00.779 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

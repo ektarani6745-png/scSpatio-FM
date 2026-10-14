@@ -1,0 +1,19 @@
+# Python Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Raw and Processed Data (Local Only)
+data/
+*.h5
+*.h5ad
+*.tar.gz
+spatial/
+
+# Heavy Machine Learning Latent Tensors
+results/gnn_embeddings/
+*.npy
+
+# Only allow the QC and Final Spatial Plots to be uploaded
+!results/qc/
+!results/spatial_plots/
